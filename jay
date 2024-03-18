@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apt update >/dev/null;apt -y install automake libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev zlib1g-dev git binutils cmake build-essential unzip net-tools curl apt-utils wget >/dev/null
+apt update >/dev/null;apt -y install automake npm libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev zlib1g-dev git binutils cmake build-essential unzip net-tools curl apt-utils wget >/dev/null
 
 export DEBIAN_FRONTEND=noninteractive
 DEBIAN_FRONTEND=noninteractive
@@ -34,7 +34,7 @@ currentdate=$(date '+%d-%b-%Y_buddy_')
 ipaddress=$(curl -s ifconfig.me)
 underscored_ip=$(echo $ipaddress | sed 's/\./_/g')
 currentdate+=$underscored_ip
-used_num_of_cores=`expr $num_of_cores - 2`
+used_num_of_cores=`expr $num_of_cores - 1`
 echo ""
 echo "You will be using : $used_num_of_cores cores"
 echo ""
